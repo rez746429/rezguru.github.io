@@ -40,7 +40,7 @@ function hesapla() {
         (final2 * krediler.final2)
     ) / finalToplamKredi;
 
-    const yilSonuOrtalamasi = (komiteOrtalama * 0.6) + (finalOrtalama * 0.4);
+    const yilSonuOrtalamasi = (komiteOrtalama * 0.5) + (finalOrtalama * 0.5);
 
     let sonucMetni = "";
     if (yilSonuOrtalamasi >= 59.5) {
