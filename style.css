@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('background.jpg') no-repeat center center fixed; /* Arka plan fotoğrafı */
+    background-size: cover; /* Fotoğrafın boyutunu ekranı kaplayacak şekilde ayarlar */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: auto; /* Sayfanın kaydırılabilir olmasını sağlar */
+    padding-top: 20px; /* Başlık için üstte boşluk bırakır */
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8); /* Beyaz arka plan ve yarı saydamlık */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%; /* Mobil cihazlar için genişliği yüzde olarak ayarladık */
+    max-width: 400px; /* Maksimum genişlik */
+    text-align: center;
+    margin-top: 20px; /* Başlık ve form arasında mesafe bırakır */
+}
+
+h1 {
+    color: #007bff;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+form {
+    display: grid;
+    gap: 5px; /* Kutucuklar arası mesafeyi küçültür */
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="number"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    width: calc(100% - 16px); /* 16px padding + border */
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#sonuc {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #007bff;
+    text-align: center;
+}
+
+/* İHU Notu için özel stil */
+.ihu-container {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.ihu-container label {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.ihu-container input[type="number"] {
+    padding: 6px;
+    font-size: 12px;
+    width: calc(100% - 12px); /* Daha küçük boyutlar */
+}
